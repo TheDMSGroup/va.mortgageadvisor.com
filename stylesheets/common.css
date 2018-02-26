@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+/* line 20, ../sass/common.sass */
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* line 25, ../sass/common.sass */
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background: #e8e8e8;
+  color: #444;
+  font-size: 14px;
+}
+
+/* line 31, ../sass/common.sass */
+p, ul, li {
+  color: #666;
+  line-height: 1.5em;
+}
+
+/* line 35, ../sass/common.sass */
+img {
+  max-width: 100%;
+}
+
+/* line 38, ../sass/common.sass */
+li {
+  line-height: 1.5em;
+}
+
+/* line 41, ../sass/common.sass */
+a {
+  color: #2579b7;
+  cursor: pointer;
+}
+/* line 44, ../sass/common.sass */
+a:hover {
+  color: #1c5d8d;
+  text-decoration: none;
+}
+
+/* line 48, ../sass/common.sass */
+h1, h2, h3 {
+  font-weight: 500;
+}
+
+/* line 51, ../sass/common.sass */
+h1 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+/* line 56, ../sass/common.sass */
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* line 60, ../sass/common.sass */
+h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+/* line 64, ../sass/common.sass */
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 68, ../sass/common.sass */
+select, input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* line 77, ../sass/common.sass */
+.left {
+  float: left;
+}
+
+/* line 80, ../sass/common.sass */
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+/* line 85, ../sass/common.sass */
+.row-inset {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* line 91, ../sass/common.sass */
+.content > div {
+  margin-bottom: 40px;
+  clear: both;
+}
+/* line 94, ../sass/common.sass */
+.content > div:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* line 99, ../sass/common.sass */
+select:-moz-focusring {
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* line 105, ../sass/common.sass */
+.header {
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 111, ../sass/common.sass */
+.header .header-brand a {
+  background-image: url("../images/va-mortgage-advisor-logo.png");
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  margin: auto;
+  width: 228px;
+  height: 30px;
+  text-indent: -9999px;
+  background-size: 228px;
+  margin-right: 10px;
+}
+/* line 122, ../sass/common.sass */
+.header p {
+  float: right;
+  color: #2579b7;
+  margin: 5px 0 0;
+}
+
+/* line 128, ../sass/common.sass */
+.form-banner {
+  position: relative;
+  min-height: 400px;
+}
+/* line 132, ../sass/common.sass */
+.form-banner h1 {
+  color: white;
+  font-weight: 500;
+  margin: 0 0 10px;
+  font-size: 48px;
+}
+
+/* line 138, ../sass/common.sass */
+.form-div {
+  max-width: 600px;
+  margin: auto;
+}
+/* line 141, ../sass/common.sass */
+.form-div input, .form-div select, .form-div .btn {
+  display: block;
+  width: 60%;
+  margin: 0 auto 15px;
+}
+/* line 146, ../sass/common.sass */
+.form-div.joined-button input, .form-div.joined-button .btn {
+  display: inline;
+  margin: 0;
+  height: 46px;
+  box-sizing: border-box;
+}
+/* line 151, ../sass/common.sass */
+.form-div.joined-button input {
+  width: 40% !important;
+  border-radius: 5px 0 0 5px;
+}
+/* line 154, ../sass/common.sass */
+.form-div.joined-button .btn {
+  width: auto;
+  border-radius: 0 5px 5px 0;
+  position: relative;
+  left: -5px;
+  top: -1px;
+}
+
+/* line 161, ../sass/common.sass */
+.zip-form {
+  text-align: center;
+}
+/* line 163, ../sass/common.sass */
+.zip-form p {
+  color: white;
+  font-size: 21px;
+  margin: 0;
+}
+
+/* line 168, ../sass/common.sass */
+.form-container {
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border-top: 1px solid #ccc;
+}
+/* line 173, ../sass/common.sass */
+.form-container .form-body {
+  padding: 20px 30px;
+}
+/* line 175, ../sass/common.sass */
+.form-container .form-footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* line 179, ../sass/common.sass */
+.footer {
+  clear: both;
+  overflow: auto;
+  padding: 30px 0;
+  text-align: center;
+}
+/* line 184, ../sass/common.sass */
+.footer p {
+  color: #999;
+  text-align: center;
+  font-size: 12px;
+}
+/* line 188, ../sass/common.sass */
+.footer b {
+  color: #666;
+}
+
+@media (max-width: 1200px) {
+  /* line 195, ../sass/common.sass */
+  .container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 207, ../sass/common.sass */
+  .header .header-brand a {
+    max-width: 320px;
+    margin: auto;
+    float: none;
+    background-size: contain;
+  }
+
+  /* line 212, ../sass/common.sass */
+  .row-inset {
+    padding: 0 20px;
+  }
+
+  /* line 214, ../sass/common.sass */
+  .form-div.joined-button input {
+    width: 100% !important;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto 10px;
+  }
+
+  /* line 219, ../sass/common.sass */
+  .card-blue {
+    max-width: 300px;
+    margin: 0 auto 20px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 227, ../sass/common.sass */
+  .form-banner {
+    background-size: contain;
+  }
+  /* line 229, ../sass/common.sass */
+  .form-banner h1 {
+    font-size: 28px;
+  }
+}

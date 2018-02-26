@@ -1,0 +1,147 @@
+@import compass/css3
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700')
+
+$blue: #2579b7
+$black: #000
+$gray: #9ea3a4
+$red: #f4171a
+
+$primary: $blue !default
+$primary-lt: lighten($primary, 10%) !default
+$primary-md: darken($primary, 10%) !default
+$secondary: $red
+$secondary-md: darken($secondary, 10%) !default
+
+// -------------------------- COMMON --------------------------------------------------
+
+.ll
+  font-family: "Open Sans", Helvetica, Arial, sans-serif
+  background: white
+  color: #444
+  font-size: 14px
+  border-radius: 5px
+  select, input[type="text"], input[type="tel"], input[type="email"]
+    border: 1px solid #ccc
+    border-radius: 0
+    padding: 5px 10px
+    box-sizing: border-box
+    font-family: "Open Sans", Helvetica, Arial, sans-serif
+    font-size: 21px
+    width: 100%
+    margin-bottom: 30px
+    border-width: 0 0 1px 0
+    border-bottom: 1px solid #444
+
+  select:-moz-focusring
+    outline: none
+    color: transparent
+    text-shadow: 0 0 0 #000
+
+  h1
+    color: $primary
+    font-size: 36px
+    font-weight: normal
+    margin: 0 0 40px
+  .pagination, .alert-danger, .alert-success, .next
+    display: none
+  .fa-check
+    color: #8bc641
+
+  .form-header
+    text-align: center
+  a
+    color: $primary
+    cursor: pointer
+    &:hover
+      color: $primary-md
+      text-decoration: none
+
+  .form-header
+    padding-bottom: 10px
+    border-bottom: 1px solid #ddd
+    margin-bottom: 15px
+  h1
+    color: $primary
+    font-size: 36px
+    font-weight: normal
+    margin: 0 0 10px
+
+  select, input[type="text"], input[type="tel"], input[type="email"]
+    border: 1px solid #ccc
+    border-radius: 2px
+    padding: 5px 10px
+    box-sizing: border-box
+    font-family: "Open Sans", Helvetica, Arial, sans-serif
+    font-size: 16px
+    width: 100%
+    margin-bottom: 30px
+
+  select:-moz-focusring
+    outline: none
+    color: transparent
+    text-shadow: 0 0 0 #000
+
+  .progress
+    height: 5px !important
+    border-radius: 2px
+    background: none !important
+    box-shadow: none !important
+    .progress-bar
+      border-radius: 0
+      background: $primary
+
+  .form-group
+    max-width: 600px
+    margin: auto
+  .form-group.formio-component-email-consent
+    max-width: 100% !important
+  .btn, .btn-primary
+    font-weight: bold
+    color: white
+    font-size: 21px !important
+    padding: 12px 30px !important
+    background: $primary !important
+    background: -moz-linear-gradient(top, $primary-lt 0%, $primary 100%) !important
+    background: -webkit-linear-gradient(top, $primary-lt 0%, $primary 100%) !important
+    background: linear-gradient(to bottom, $primary-lt 0%, $primary 100%) !important
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-lt', endColorstr='$primary',GradientType=0 ) !important
+    border: 1px solid $primary-md
+    border-radius: 5px
+    white-space: normal
+    cursor: pointer
+    text-shadow: rgba(0,0,0,0.2) 0 -1px 0
+    margin: 15px auto
+    width: 100%
+    max-width: 500px
+    display: block !important
+    &:hover
+      color: white
+      background: $primary-md !important
+      background: -moz-linear-gradient(top, $primary 0%, $primary-md 100%) !important
+      background: -webkit-linear-gradient(top, $primary 0%, $primary-md 100%) !important
+      background: linear-gradient(to bottom, $primary 0%, $primary-md 100%) !important
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary', endColorstr='$primary-md',GradientType=0 ) !important
+      text-shadow: rgba(0,0,0,0.6) 0 -1px 0
+      top: 1px
+      position: relative
+
+  .disclaimer
+    font-size: 12px
+    line-height: 20px
+
+  label
+    font-size: 16px
+    text-align: center
+    color: $primary
+    display: block !important
+  label.tcpa
+    font-weight: normal
+    text-align: left
+    color: #666
+
+//////////////////////////////////////  MEDIA QUERIES  ///////////////////////////////////////
+
+@media (min-width: 769px)
+  .ll
+    .form-header br
+      display: none
