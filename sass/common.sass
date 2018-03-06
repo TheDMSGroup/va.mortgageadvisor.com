@@ -211,6 +211,8 @@ select:-moz-focusring
     background-size: contain
   .row-inset
     padding: 0 20px
+  .form-container
+    margin: 0 -20px
   .form-div.joined-button input
     width: 100% !important
     text-align: center
@@ -223,8 +225,10 @@ select:-moz-focusring
 // UP TO LANDSCAPE PHONE
 // ---------------------
 @media (max-width: 480px)
-
+  .form-container
+    border-radius: 0
   .form-banner
     background-size: contain
     h1
       font-size: 28px
+

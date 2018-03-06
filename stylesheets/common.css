@@ -259,6 +259,11 @@ select:-moz-focusring {
   }
 
   /* line 214, ../sass/common.sass */
+  .form-container {
+    margin: 0 -20px;
+  }
+
+  /* line 216, ../sass/common.sass */
   .form-div.joined-button input {
     width: 100% !important;
     text-align: center;
@@ -266,18 +271,23 @@ select:-moz-focusring {
     margin: 0 auto 10px;
   }
 
-  /* line 219, ../sass/common.sass */
+  /* line 221, ../sass/common.sass */
   .card-blue {
     max-width: 300px;
     margin: 0 auto 20px;
   }
 }
 @media (max-width: 480px) {
-  /* line 227, ../sass/common.sass */
+  /* line 228, ../sass/common.sass */
+  .form-container {
+    border-radius: 0;
+  }
+
+  /* line 230, ../sass/common.sass */
   .form-banner {
     background-size: contain;
   }
-  /* line 229, ../sass/common.sass */
+  /* line 232, ../sass/common.sass */
   .form-banner h1 {
     font-size: 28px;
   }
