@@ -5,6 +5,7 @@ $blue: #2579b7
 $black: #000
 $gray: #9ea3a4
 $red: #f4171a
+$slate: #49789e
 
 $primary: $blue !default
 $primary-lt: lighten($primary, 10%) !default
@@ -13,6 +14,63 @@ $secondary: $red
 $secondary-md: darken($secondary, 10%) !default
 
 // -------------------------- COMMON --------------------------------------------------
+
+.page-form
+  background: white
+  .header
+    padding: 0 0 10px
+    .phone-number
+      background: $slate
+      padding: 5px 0
+      text-align: center
+      color: white
+      a
+        color: white
+    .header-brand
+      text-align: center
+      padding: 10px 0
+      a
+        float: none
+        margin-right: auto
+  .ll
+    .form-header
+      border: none
+    label
+      font-weight: 700
+    .formio-component-loan-type-fieldset
+      .row
+        background: #f0f0f0
+        padding: 20px
+      .purchase-btn, .refinance-btn
+        background: white !important
+        color: #333 !important
+        border: none !important
+        box-shadow: rgba(0,0,0,0.1) 0px 1px 2px
+        padding: 30px 15px !important
+        font-size: 16px !important
+        text-align: center
+        transition: all .2s ease-out
+        text-shadow: none !important
+        &:before
+          content: ""
+          display: block
+          width: 110px
+          height: 84px
+          background-size: contain
+          margin: 5px auto 10px
+        &:hover
+          transform: scale(1.1, 1.1)
+          text-shadow: none !important
+      .purchase-btn:before
+        background-image: url("../images/icons/icon-purchase.png")
+      .refinance-btn:before
+        background-image: url("../images/icons/icon-refinance.png")
+
+@media (max-width: 768px)
+  .page-form
+    h1
+      font-size: 20px
+      font-weight: 700 !important
 
 .ll
   font-family: "Open Sans", Helvetica, Arial, sans-serif

@@ -1,5 +1,89 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-/* line 17, ../sass/form.sass */
+/* line 18, ../sass/form.sass */
+.page-form {
+  background: white;
+}
+/* line 20, ../sass/form.sass */
+.page-form .header {
+  padding: 0 0 10px;
+}
+/* line 22, ../sass/form.sass */
+.page-form .header .phone-number {
+  background: #49789e;
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+}
+/* line 27, ../sass/form.sass */
+.page-form .header .phone-number a {
+  color: white;
+}
+/* line 29, ../sass/form.sass */
+.page-form .header .header-brand {
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 32, ../sass/form.sass */
+.page-form .header .header-brand a {
+  float: none;
+  margin-right: auto;
+}
+/* line 36, ../sass/form.sass */
+.page-form .ll .form-header {
+  border: none;
+}
+/* line 38, ../sass/form.sass */
+.page-form .ll label {
+  font-weight: 700;
+}
+/* line 41, ../sass/form.sass */
+.page-form .ll .formio-component-loan-type-fieldset .row {
+  background: #f0f0f0;
+  padding: 20px;
+}
+/* line 44, ../sass/form.sass */
+.page-form .ll .formio-component-loan-type-fieldset .purchase-btn, .page-form .ll .formio-component-loan-type-fieldset .refinance-btn {
+  background: white !important;
+  color: #333 !important;
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px;
+  padding: 30px 15px !important;
+  font-size: 16px !important;
+  text-align: center;
+  transition: all 0.2s ease-out;
+  text-shadow: none !important;
+}
+/* line 54, ../sass/form.sass */
+.page-form .ll .formio-component-loan-type-fieldset .purchase-btn:before, .page-form .ll .formio-component-loan-type-fieldset .refinance-btn:before {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 84px;
+  background-size: contain;
+  margin: 5px auto 10px;
+}
+/* line 61, ../sass/form.sass */
+.page-form .ll .formio-component-loan-type-fieldset .purchase-btn:hover, .page-form .ll .formio-component-loan-type-fieldset .refinance-btn:hover {
+  transform: scale(1.1, 1.1);
+  text-shadow: none !important;
+}
+/* line 64, ../sass/form.sass */
+.page-form .ll .formio-component-loan-type-fieldset .purchase-btn:before {
+  background-image: url("../images/icons/icon-purchase.png");
+}
+/* line 66, ../sass/form.sass */
+.page-form .ll .formio-component-loan-type-fieldset .refinance-btn:before {
+  background-image: url("../images/icons/icon-refinance.png");
+}
+
+@media (max-width: 768px) {
+  /* line 71, ../sass/form.sass */
+  .page-form h1 {
+    font-size: 20px;
+    font-weight: 700 !important;
+  }
+}
+/* line 75, ../sass/form.sass */
 .ll {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   background: white;
@@ -7,7 +91,7 @@
   font-size: 14px;
   border-radius: 5px;
 }
-/* line 23, ../sass/form.sass */
+/* line 81, ../sass/form.sass */
 .ll select, .ll input[type="text"], .ll input[type="tel"], .ll input[type="email"] {
   border: 1px solid #ccc;
   border-radius: 0;
@@ -20,55 +104,55 @@
   border-width: 0 0 1px 0;
   border-bottom: 1px solid #444;
 }
-/* line 35, ../sass/form.sass */
+/* line 93, ../sass/form.sass */
 .ll select:-moz-focusring {
   outline: none;
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
-/* line 40, ../sass/form.sass */
+/* line 98, ../sass/form.sass */
 .ll h1 {
   color: #2579b7;
   font-size: 36px;
   font-weight: normal;
   margin: 0 0 40px;
 }
-/* line 45, ../sass/form.sass */
+/* line 103, ../sass/form.sass */
 .ll .pagination, .ll .alert-danger, .ll .alert-success, .ll .next {
   display: none;
 }
-/* line 47, ../sass/form.sass */
+/* line 105, ../sass/form.sass */
 .ll .fa-check {
   color: #8bc641;
 }
-/* line 50, ../sass/form.sass */
+/* line 108, ../sass/form.sass */
 .ll .form-header {
   text-align: center;
 }
-/* line 52, ../sass/form.sass */
+/* line 110, ../sass/form.sass */
 .ll a {
   color: #2579b7;
   cursor: pointer;
 }
-/* line 55, ../sass/form.sass */
+/* line 113, ../sass/form.sass */
 .ll a:hover {
   color: #1c5d8d;
   text-decoration: none;
 }
-/* line 59, ../sass/form.sass */
+/* line 117, ../sass/form.sass */
 .ll .form-header {
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
   margin-bottom: 15px;
 }
-/* line 63, ../sass/form.sass */
+/* line 121, ../sass/form.sass */
 .ll h1 {
   color: #2579b7;
   font-size: 36px;
   font-weight: normal;
   margin: 0 0 10px;
 }
-/* line 69, ../sass/form.sass */
+/* line 127, ../sass/form.sass */
 .ll select, .ll input[type="text"], .ll input[type="tel"], .ll input[type="email"] {
   border: 1px solid #ccc;
   border-radius: 2px;
@@ -79,34 +163,34 @@
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 79, ../sass/form.sass */
+/* line 137, ../sass/form.sass */
 .ll select:-moz-focusring {
   outline: none;
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
-/* line 84, ../sass/form.sass */
+/* line 142, ../sass/form.sass */
 .ll .progress {
   height: 5px !important;
   border-radius: 2px;
   background: none !important;
   box-shadow: none !important;
 }
-/* line 89, ../sass/form.sass */
+/* line 147, ../sass/form.sass */
 .ll .progress .progress-bar {
   border-radius: 0;
   background: #2579b7;
 }
-/* line 93, ../sass/form.sass */
+/* line 151, ../sass/form.sass */
 .ll .form-group {
   max-width: 600px;
   margin: auto;
 }
-/* line 96, ../sass/form.sass */
+/* line 154, ../sass/form.sass */
 .ll .form-group.formio-component-email-consent {
   max-width: 100% !important;
 }
-/* line 98, ../sass/form.sass */
+/* line 156, ../sass/form.sass */
 .ll .btn, .ll .btn-primary {
   font-weight: bold;
   color: white;
@@ -127,7 +211,7 @@
   max-width: 500px;
   display: block !important;
 }
-/* line 117, ../sass/form.sass */
+/* line 175, ../sass/form.sass */
 .ll .btn:hover, .ll .btn-primary:hover {
   color: white;
   background: #1c5d8d !important;
@@ -139,19 +223,19 @@
   top: 1px;
   position: relative;
 }
-/* line 128, ../sass/form.sass */
+/* line 186, ../sass/form.sass */
 .ll .disclaimer {
   font-size: 12px;
   line-height: 20px;
 }
-/* line 132, ../sass/form.sass */
+/* line 190, ../sass/form.sass */
 .ll label {
   font-size: 16px;
   text-align: center;
   color: #2579b7;
   display: block !important;
 }
-/* line 137, ../sass/form.sass */
+/* line 195, ../sass/form.sass */
 .ll label.tcpa {
   font-weight: normal;
   text-align: left;
@@ -159,7 +243,7 @@
 }
 
 @media (min-width: 769px) {
-  /* line 146, ../sass/form.sass */
+  /* line 204, ../sass/form.sass */
   .ll .form-header br {
     display: none;
   }
